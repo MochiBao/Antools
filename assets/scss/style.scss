@@ -5,6 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 body {
     margin: 0;
     height: 100vh;
@@ -16,6 +17,25 @@ body {
 
 
 .tools{
+    .main-text{
+        text-align: center;
+        .main-title{
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 130%;
+            color: rgba(255, 255, 255, 0.9);
+    
+        }
+
+        .main-subtitle{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+            color: rgba(255, 255, 255, 0.55);
+
+        }
+    }
+
 ul {
     margin-top: 110px;
     display: flex;
@@ -25,6 +45,16 @@ ul {
     li {
         width: calc(33.333% - 80px);
         margin-right: 25px;
+
+        @media (max-width: 1024px){
+
+                width: 50%;
+            }
+
+            @media (max-width: 768px){
+
+                width: 100%;
+            }
     }
 
     .tool {
@@ -34,6 +64,7 @@ ul {
         overflow: hidden;
         color: #fff;
         position: relative;
+
         &-wrap {
             padding: 33px;
             border-radius: 15px;
@@ -150,6 +181,8 @@ ul {
                     border: none;
                     padding: 7px;
 
+                    
+
                     &:hover svg path{
                         fill: #FD3B41;
                         fill-opacity: 1;
@@ -163,6 +196,7 @@ ul {
         }
 
         .visit{
+            display: block;
             width: 106px;
             text-decoration: none;
             color: rgba(255, 255, 255, 0.55);
@@ -171,11 +205,11 @@ ul {
             line-height: 24px;
             border-radius: 8px;
             text-align: center;
+            transition: background 0.7s, color 0.7s;
 
             &:hover{
                 background: #FF6E30;
                 color: #FFFFFF;
-                transition: all 0.7s;
             }
         }
     }
