@@ -48,13 +48,8 @@ ul {
 
         @media (max-width: 1024px){
 
-                width: 50%;
-            }
-
-            @media (max-width: 768px){
-
-                width: 100%;
-            }
+            width: 50%;
+        }
     }
 
     .tool {
@@ -64,6 +59,12 @@ ul {
         overflow: hidden;
         color: #fff;
         position: relative;
+
+
+        @media (max-width: 768px){
+
+            width: 100%;
+        }
 
         &-wrap {
             padding: 33px;

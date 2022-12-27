@@ -42,11 +42,6 @@ body {
     width: 50%;
   }
 }
-@media (max-width: 768px) {
-  .tools ul li {
-    width: 100%;
-  }
-}
 .tools ul .tool {
   width: 392px;
   padding: 2px;
@@ -54,6 +49,11 @@ body {
   overflow: hidden;
   color: #fff;
   position: relative;
+}
+@media (max-width: 768px) {
+  .tools ul .tool {
+    width: 100%;
+  }
 }
 .tools ul .tool-wrap {
   padding: 33px;
